@@ -14,7 +14,7 @@ class Solution():
             mid = (end - start) // 2 + start
             if mid**2 < x:
                 start = mid
-            elif mid**2 == x:
+            elif mid**2 == x: # this is necessary
                 start = mid
             else:
                 end = mid
