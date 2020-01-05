@@ -5,6 +5,7 @@ Created on Wed Jan  1 15:29:05 2020
 
 @author: yiwang
 """
+# traverse method
 
 class TreeNode:
     def __init__(self, x):
