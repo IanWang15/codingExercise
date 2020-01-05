@@ -25,6 +25,11 @@ class Solution:
             results.extend(left)
         if right:
             results.extend(right)
+# if wants to see the recursion details,
+# replace the above 4 lines by the following 2 lines
+#
+#        results.append(left)
+#        results.append(right)
         return results
         
 #[1,None,2,3]
