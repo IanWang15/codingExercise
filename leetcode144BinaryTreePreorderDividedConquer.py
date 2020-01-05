@@ -17,16 +17,15 @@ class Solution:
     def preorderTraversal(self, root: TreeNode):
         results = []
         if root is None:
-            return
+            return None
         left = self.preorderTraversal(root.left)
         right = self.preorderTraversal(root.right)
         results.append(root.val)
-        if left is not None:
-            results.append(left)
-        if right is not None:
-            results.append(right)
+        if left:
+            results.extend(left)
+        if right:
+            results.extend(right)
         return results
-        
         
 #[1,None,2,3]
 t = TreeNode(1)
